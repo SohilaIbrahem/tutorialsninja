@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Project">
+
+    <parameter name="browser" value=""/>
+    <listeners>
+        <listener class-name="listener.Listener"/>
+    </listeners>
+
+    <test name="Check Registration ">
+        <classes>
+            <class name="testcases.TC01_RegistrationTest">
+
+                <methods>
+                    <include name="RegisterTest_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+</suite>
